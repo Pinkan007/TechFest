@@ -1,0 +1,51 @@
+#addpage {
+  width: 100vw !important;
+  padding: 0 !important;
+  background: linear-gradient(
+    246deg,
+    rgba(39, 14, 142, 1) 0%,
+    rgba(0, 0, 0, 1) 61%
+  );
+  color: white;
+}
+#addpage .row {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#addpage .row h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+#addpage .row .mb-3 label {
+  font-size: 20px;
+  font-weight: 600;
+}
+#addpage .row .mb-3 ::placeholder {
+  color: white;
+  font-weight: 400;
+}
+#addpage .row .mb-3 input {
+  background-color: rgba(249, 246, 246, 0.2);
+  color: white;
+  font-weight: 400;
+}
+#addpage .row .mb-3 textarea {
+  background-color: rgba(249, 246, 246, 0.2);
+  color: white;
+  height: 300px;
+}
+#addpage .row .mb-3 #shortds {
+  height: 30px;
+}
+#addpage .row .btn {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(25, 0, 255);
+  padding: 5px 20px;
+  margin-top: 50px;
+  transform: 0.4;
+}
+#addpage .row .btn:hover {
+  transform: scale(1.3);
+}

@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff !important;
+    background: linear-gradient(246deg, rgba(5,144,70,1) 0%, rgba(0,0,0,1) 61%);
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+.container-fluid {
+    background: linear-gradient(
+      0deg,
+      rgba(74, 82, 91, 1) 6%,
+      rgba(0, 0, 0, 1) 22%
+    ) !important;
+    color: white !important;
+  }
+  
+  nav {
+    height: 70px;
+    background: linear-gradient(
+      0deg,
+      rgba(74, 82, 91, 1) 16%,
+      rgba(0, 0, 0, 1) 47%
+    ) !important;
+    /* display: flex;
+    align-items: center;
+    margin-left: 20%;
+    gap: 30px;*/
+  
+    position: relative !important;
+    z-index: 100;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white !important;
+    font-size: 1.2rem;
+    font-weight: 700 !important;
+    padding: 10px 20px !important;
+    transition: 0.25s !important;
+  }
+  
+  /* nav a:hover {
+    background: #ff1414cb;
+    border-radius: 5px;
+  } */
+  .dropdown {
+    position: absolute !important;
+    right: 20px;
+  }
+  .dropdown-menu {
+    background-color: black !important;
+    color: #fff;
+  }
+  #navbarNavDropdown a:hover {
+    background: #ff1414cb !important;
+    border-radius: 5px !important;
+  }
+/* about */
+.container {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+.content{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333333;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}

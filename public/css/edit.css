@@ -1,0 +1,51 @@
+#editpage {
+  width: 100vw !important;
+  padding: 0 !important;
+  background: linear-gradient(
+    246deg,
+    rgba(39, 14, 142, 1) 0%,
+    rgba(0, 0, 0, 1) 61%
+  );
+  color: white;
+}
+#editpage .row {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#editpage .row h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+#editpage .row .mb-3 label {
+  font-size: 20px;
+  font-weight: 600;
+}
+#editpage .row .mb-3 ::placeholder {
+  color: white;
+  font-weight: 400;
+}
+#editpage .row .mb-3 input {
+  background-color: rgba(249, 246, 246, 0.2);
+  color: white;
+  font-weight: 400;
+}
+#editpage .row .mb-3 textarea {
+  background-color: rgba(249, 246, 246, 0.2);
+  color: white;
+  height: 300px;
+}
+#editpage .row .mb-3 #shortds {
+  height: 30px;
+}
+#editpage .row .btn {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(75, 12, 222);
+  padding: 5px 20px;
+  margin-top: 50px;
+  transform: 0.4;
+}
+#editpage .row .btn:hover {
+  transform: scale(1.3);
+}

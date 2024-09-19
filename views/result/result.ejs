@@ -1,0 +1,66 @@
+<% layout("/layout/boilerplate.ejs") %>
+<body id="result">
+  <section>
+    <div id="heading">
+      <h2>All Result</h2>
+    </div>
+
+    <% for(let result of allresult){%>
+
+    <div class="result_body">
+      <div class="result-text">
+        <h2 id="event_name">Event</h2>
+
+        <h5 class="card-title"><%=result.event_name%></h5>
+      </div>
+      <div class="result-text">
+        <h2>Team Name</h2>
+        <p class="card-text"><%=result.team_name%></p>
+      </div>
+      <div class="result-text">
+        <h2>Position</h2>
+
+        <p class="card-text"><%=result.position%></p>
+      </div>
+      <div class="result-text">
+        <h2>Year</h2>
+
+        <p class="card-text"><%=result.year%></p>
+      </div>
+      <div class="result-text" id="more">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="/fest/result/<%=result._id%>/edit"
+              >Edit</a
+            >
+          </li>
+          <li>
+            <a>
+              <form
+                method="post"
+                action="/fest/result/<%= result._id%>?_method=delete"
+              >
+                <button>Delete</button>
+              </form>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <%}%>
+
+    <form method="get" action="/fest/result/new">
+      <button class="btn" id="AddNew">Add new</button>
+    </form>
+  </section>
+</body>

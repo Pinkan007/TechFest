@@ -1,0 +1,38 @@
+<% layout("/layout/boilerplate") %>
+<body id="event">
+  <section>
+    <div id="heading">
+      <h2>All Event</h2>
+    </div>
+
+    <div class="card-container">
+      <% for(let event of allEvent){%>
+
+      <a href="/fest/event/<%=event._id%>" class="card-link">
+        <div class="card">
+          <div id="image">
+            <img src="<%=event.image%>" class="card-img-top" alt="..." />
+          </div>
+         
+          <div class="card-body">
+            <h5 class="card-title" style="color: white"><%=event.name%></h5>
+            <p class="card-text" style="color: white"><%=event.shortdescription%></p>
+            <a
+              href="/fest/event/<%=event._id%>  "
+              class="btn btn-primary"
+              id="readmore"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </a>
+
+      <%}%>
+    </div>
+ 
+
+  <!-- <form method="get" action="/fest/event/new">
+    <button id="AddNew">Add new</button>
+  </form> -->
+</section>
+</body>

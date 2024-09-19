@@ -1,0 +1,263 @@
+
+#event {
+  margin: 0 !important;
+  padding: 0 !important;
+   
+  background: linear-gradient(
+    329deg,
+    rgba(19, 101, 136, 1) 1%,
+    rgba(0, 0, 0, 1) 74%
+  );
+}
+#event section {
+  width: 96%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#event section #heading {
+  color: rgb(10, 103, 161);
+  margin-bottom: 50px;
+  margin-left: 40px;
+  text-align: left;
+
+  font-style: normal;
+
+  width: 100%;
+}
+#event section #heading h2 {
+  font-weight: 700;
+  font-size: 50px;
+}
+#event section .card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* card style */
+
+#event section .card-container .card {
+  width: 22% !important;
+  min-height: 25rem;
+  color: white;
+  background-color: rgb(7, 82, 129);
+  margin: 5px;
+  
+  margin-bottom: 20px;
+}
+#event section .card-container .card:hover {
+  border: 3px solid rgb(255, 251, 251);
+}
+
+#image {
+  /* height: 40% !important; */
+  overflow: hidden;
+  height: 100%;
+}
+
+#event section .card-container .card img {
+  width: 100% !important;
+  cursor: pointer;
+  transition: 0.4s !important;
+}
+.card #image img:hover {
+  transform: scale(1.5);
+}
+.card .card-body {
+  height: 40% !important;
+  position: relative !important;
+}
+.card .card-body #readmore {
+  position: absolute !important;
+  bottom: 10px !important;
+  right: 10px !important;
+  font-weight: 700;
+  color: white;
+}
+#AddNew {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  background-color: rgb(7, 82, 129);
+  color: #fff;
+  font-size: large;
+  padding: 5px 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  transform: 0.3;
+}
+#AddNew:hover {
+  transform: scale(1.2);
+  background-color: rgb(10, 103, 161);
+  border: 2px solid #fff;
+}
+@media (max-width: 1000px) {
+  #event {
+    margin: 0 !important;
+    padding: 0 !important;
+    
+  }
+  #event section {
+    width: 100%;
+    margin-top: 60px;
+  }
+  #event section #heading {
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+  #event section #heading h2 {
+    font-weight: 600;
+    font-size: 50px;
+  }
+  /* card Style */
+  #event section .card-container .card {
+    width: 30% !important;
+    height: 100px !important;
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  #event section .card-container .card #image {
+    width: 100% !important;
+    cursor: pointer;
+    transition: 0.4s !important;
+  }
+  .card .card-body {
+    position: relative !important;
+    height: 40% !important;
+  }
+  
+  .card .card-body #readmore {
+    position: absolute !important;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 600;
+    color: white;
+  }
+  #AddNew {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    background-color: rgb(7, 82, 129);
+    color: #fff;
+    font-size: large;
+    padding: 5px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    transform: 0.3;
+  }
+}
+@media (max-width: 600px) {
+  #event {
+    margin: 0 !important;
+    padding: 0 !important;
+    
+  }
+  #event section {
+    width: 100%;
+    margin-top: 60px;
+  }
+  #event section #heading {
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+  #event section #heading h2 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+  /* card Style */
+  #event section .card-container .card {
+    width: 45% !important;
+    /* height: 100px !important; */
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  #event section .card-container .card #image {
+    width: 100% !important;
+    cursor: pointer;
+    transition: 0.4s !important;
+  }
+  .card .card-body {
+    position: relative !important;
+    height: 40% !important;
+  }
+  
+  .card .card-body #readmore {
+    position: absolute !important;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 600;
+    color: white;
+  }
+  #AddNew {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    background-color: rgb(7, 82, 129);
+    color: #fff;
+    font-size: large;
+    padding: 5px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    transform: 0.3;
+  }
+}
+@media (max-width: 450px) {
+  #event {
+    margin: 0 !important;
+    padding: 0 !important;
+    
+  }
+  #event section {
+    width: 100%;
+    margin-top: 60px;
+  }
+  #event section #heading {
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+  #event section #heading h2 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+  /* card Style */
+  #event section .card-container .card {
+    width: 90% !important;
+    /* height: 100px !important; */
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  #event section .card-container .card #image {
+    width: 100% !important;
+    cursor: pointer;
+    transition: 0.4s !important;
+  }
+  .card .card-body {
+    position: relative !important;
+    height: 40% !important;
+  }
+  
+  .card .card-body #readmore {
+    position: absolute !important;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 600;
+    color: white;
+  }
+  #AddNew {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    background-color: rgb(7, 82, 129);
+    color: #fff;
+    font-size: large;
+    padding: 5px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    transform: 0.3;
+  }
+}

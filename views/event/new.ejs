@@ -1,0 +1,148 @@
+<% layout("/layout/boilerplate") %>
+<body id="addpage">
+  <form method="post" action="/fest/event" class="needs-validation" novalidate>
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h2>Add new Event</h2>
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            name="event[name]"
+            class="form-control"
+            type="text"
+            placeholder="Enter A Catchy Title"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="shortdescription" class="form-label"
+            >Short Description</label
+          >
+          <textarea
+            id="shortds"
+            name="event[shortdescription]"
+            class="form-control"
+            placeholder="Enter A Short Description About This Event"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="fulldescription" class="form-label"
+            >Full Description</label
+          >
+          <textarea
+            name="event[fulldescription]"
+            class="form-control"
+            placeholder="Enter A Brief Description"
+            minlength="500"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="coordinator_name" class="form-label"
+            >Co-ordinator Nmae</label
+          >
+          <input
+            name="event[coordinator_name]"
+            class="form-control"
+            type="text"
+            placeholder="Co-ordinator Name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="teacher_name" class="form-label">Teacher Name</label>
+          <input
+            name="event[teacher_name]"
+            class="form-control"
+            type="text"
+            placeholder="Teacher Name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="image" class="form-label">Image Link/URL</label>
+          <input
+            name="event[image]"
+            class="form-control"
+            type="text"
+            placeholder="Enter URL"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="register" class="form-label">Register Link</label>
+          <input
+            name="event[register_link]"
+            class="form-control"
+            type="text"
+            placeholder="Register Form Link"
+            required
+          />
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="date" class="form-label">Event Date</label>
+            <input
+              name="event[date]"
+              class="form-control"
+              type="date"
+              placeholder="Date"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="time" class="form-label">Event Time</label>
+            <input
+              name="event[time]"
+              class="form-control"
+              type="time"
+              placeholder="Time"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="rule" class="form-label">Rules</label>
+          <textarea
+            name="event[rule]"
+            class="form-control"
+            placeholder="Rules"
+            minlength="100"
+            required
+          ></textarea>
+        </div>
+
+        <button class="btn">Add</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    (() => {
+      "use strict";
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll(".needs-validation");
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
+</body>

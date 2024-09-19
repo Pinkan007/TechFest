@@ -1,0 +1,42 @@
+<% layout("/layout/boilerplate") %>
+<body id="showpagebody">
+  <section id="showpage">
+    <div id="seeheading">
+      <h2>See In Details</h2>
+    </div>
+    <div id="upper">
+      <div id="image">
+        <img src="<%=events.image%>" />
+      </div>
+      <div id="content">
+        <h1 id="title"><%=events.name%></h1>
+        <h4 id="shortdescription"><%=events.shortdescription%></h4>
+        <p class="text" id="coordinatorname">
+          <span>Coordinator Name :</span><%=events.coordinator_name%>
+        </p>
+        <p class="text" id="teachername">
+          <span>Teacher Name :</span><%=events.teacher_name%>
+        </p>
+        <p class="text" id="date"><span> Date :</span> <%=events.date%></p>
+        <p class="text" id="time"><span>Time :</span><%=events.time%></p>
+      </div>
+    </div>
+    <div id="lower">
+      <h2>DESCRIPTION</h2>
+      <p class="text" id="fulldescrption"><%=events.fulldescription%></p>
+      <h2>RULE</h2>
+      <p class="text" id="rules"><%=events.rule%></p>
+    </div>
+    <a id="Register" href="<%=events.register_link%>">Register</a>
+    <div id="btn">
+    <form method="get" action="/fest/event/<%= events._id%>/edit">
+      <button class="btn">Edit</button>
+    </form>
+    <form method="post" action="/fest/event/<%= events._id%>?_method=delete">
+      <button class="btn">delete</button>
+    </form>
+</div>
+  </section>
+
+  
+</body>

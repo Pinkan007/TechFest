@@ -1,0 +1,76 @@
+<% layout("/layout/boilerplate") %>
+<body id="addpage">
+  <form method="post" action="/fest/result" class="needs-validation" novalidate>
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h2>Add new Result</h2>
+        <div class="mb-3">
+          <label for="event_name" class="form-label">Event Name</label>
+          <input
+            name="result[event_name]"
+            class="form-control"
+            type="text"
+            placeholder="Enter Event Name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="team_name" class="form-label">Team Name/indivisual</label>
+          <input
+            name="result[team_name]"
+            class="form-control"
+            type="text"
+            placeholder="Enter Team Name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Position" class="form-label">Position</label>
+          <input
+            name="result[position]"
+            class="form-control"
+            type="text"
+            placeholder="1st"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="year" class="form-label">Year of Studying </label>
+          <input
+            name="result[year]"
+            class="form-control"
+            type="text"
+            placeholder="3rd Year"
+            required
+          />
+        </div>
+
+        <button class="btn">Add</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    (() => {
+      "use strict";
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll(".needs-validation");
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
+</body>

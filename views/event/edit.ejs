@@ -1,0 +1,151 @@
+<% layout("/layout/boilerplate") %>>
+<body id="editpage">
+  <form method="post" action="/fest/event/<%=data._id%>?_method=put">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h2>Edit Details</h2>
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            name="event[name]"
+            class="form-control"
+            type="text"
+            value="<%=data.name%>"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="shortdescription" class="form-label"
+            >Short Description</label
+          >
+          <textarea
+            id="shortds"
+            name="event[shortdescription]"
+            class="form-control"
+            placeholder="Write A shortdescription"
+          >
+<%=data.shortdescription%>"</textarea
+          >
+        </div>
+
+        <div class="mb-3">
+          <label for="fulldescription" class="form-label"
+            >Full Description</label
+          >
+          <textarea
+            name="event[fulldescription]"
+            class="form-control"
+            placeholder="Enter A Brief Description"
+          >
+<%=data.fulldescription%>"</textarea
+          >
+        </div>
+
+        <div class="mb-3">
+          <label for="coordinator_name" class="form-label"
+            >Co-ordinator Nmae</label
+          >
+          <input
+            name="event[coordinator_name]"
+            class="form-control"
+            type="text"
+            placeholder="Co-ordinator Name"
+            value="<%=data.coordinator_name%>"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="teacher_name" class="form-label">Teacher Name</label>
+          <input
+            name="event[teacher_name]"
+            class="form-control"
+            type="text"
+            placeholder="Teacher Name"
+            value="<%=data.teacher_name%>"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="image" class="form-label">Image Link/URL</label>
+          <input
+            name="event[image]"
+            class="form-control"
+            type="text"
+            placeholder="Enter URL"
+            value="<%=data.image%>"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="register" class="form-label">Register</label>
+          <input
+            name="event[register_link]"
+            class="form-control"
+            type="text"
+            placeholder="Register Form Link"
+            value="<%=data.register_link%>"
+          />
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="date" class="form-label">Event Date</label>
+            <input
+              name="event[date]"
+              class="form-control"
+              type="date"
+              placeholder="Date"
+              value="<%=data.date%>"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="time" class="form-label">Event Time</label>
+            <input
+              name="event[time]"
+              class="form-control"
+              type="time"
+              placeholder="Time"
+              value="<%=data.time%>"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="rule" class="form-label">Rules</label>
+          <textarea name="event[rule]" class="form-control" placeholder="Rules">
+<%=data.rule%></textarea
+          >
+        </div>
+
+        <button class="btn btn-dark">Edit</button>
+      </div>
+    </div>
+
+    <!-- name:
+    <input name="event[name]" type="text" value="<%=data.name%>" /><br />
+    Short Description:
+    <textarea name="event[shortdescription]"><%=data.description%>"</textarea
+    ><br />
+    Full Description:
+    <textarea name="event[fulldescription]"><%=data.description%>"</textarea
+    ><br />
+    rule
+    <input name="event[rule]" type="text" value="<%=data.rule%>" /><br />
+    coordinator_name
+    <input
+      name="event[coordinator_name]"
+      type="text"
+      value="<%=data.coordinator_name%>"
+    /><br />
+    teacher_name
+    <input
+      name="event[teacher_name]"
+      type="text"
+      value="<%=data.teacher_name%>"
+    /><br />
+    image
+    <input name="event[image]" type="text" value="<%=data.image%>" /><br />
+    date
+    <input name="event[date]" type="text" value="<%=data.date%>" /><br />
+    time
+    <input name="event[time]" type="text" value="<%=data.time%>" /><br />
+    <button>Add</button> -->
+  </form>
+  <script src="/js/form.js"></script>
+</body>
